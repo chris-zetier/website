@@ -74,7 +74,7 @@ KUBECONFIG=~/.kube/config:~/.kube/kubconfig2
 kubectl config view
 
 # Show merged kubeconfig settings and raw certificate data and exposed secrets
-kubectl config view --raw 
+kubectl config view --raw
 
 # get the password for the e2e user
 kubectl config view -o jsonpath='{.users[?(@.name == "e2e")].user.password}'
